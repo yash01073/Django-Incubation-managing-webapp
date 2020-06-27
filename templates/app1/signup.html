@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Cryptos - Cryptocurrency &amp; Mining Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'app1/img/core-img/favicon.ico' %}">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="{% static 'app1/style.css' %}">
+
+</head>
+
+<body>
+    <!-- ##### Preloader ##### -->
+    
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="top-header-content h-100 d-flex align-items-center justify-content-between">
+                            <!-- Top Headline -->
+                            <div class="top-headline">
+                                <p>Welcome to <span>Cryptos</span></p>
+                            </div>
+                            <!-- Top Login & Faq & Earn Monery btn -->
+                            <div class="login-faq-earn-money">
+                                <a href="/app1/login">Login</a>
+                                <a href='/app1/signup'>Register</a>
+                                <a href="#">FAQ</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="cryptos-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="cryptosNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="/app1/"><img src={% static 'app1/img/core-img/logo.png' %} alt=''></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="/app1/">Home</a></li>
+                                    <li><a href="#">About Us</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">The Institute</a></li>
+                                            <li><a href="about-us.html">The Objective</a></li>
+                                            <li><a href="blog.html">Facilities</a></li>
+                                            <li><a href="contact.html">Training Rent</a></li>
+                                            <li><a href="elements.html">Chart</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Events</a>
+                                        <div class="classynav">
+                                            
+                                            
+                                            <ul class="dropdown">
+                                                <li><a href="#">- Press Release</a></li>
+                                                <li><a href="#">- Events/Workshop</a></li>
+                                                <li><a href="#">- Image Gallery</a></li>
+                                                <li><a href="#">- Training Prog.</a></li>
+                                                <li><a href="#">- Global Prog.</a></li>
+                                                <li><a href="#">- About us</a></li>
+                                            </ul>
+                                           
+                                          
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Training Details</a></li>
+                                    <li><a href="/app1/contact/">Contact</a></li>
+                                </ul>
+
+                                <!-- Newsletter Form -->
+                                <div class="header-newsletter-form">
+                                    <form action="#" method="post">
+                                        <input type="email" name="email" id="email" placeholder="Newsletter">
+                                        <button type="submit">Subscribe</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <div class="breadcumb-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="breadcumb-text">
+                        <h2>Register</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcumb Thumb Area -->
+        <div class="breadcumb-thumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcumb-thumb">
+                            <img src={% static 'app1/img/bg-img/breadcumb.png' %} alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="elements-area mt-50 section-padding-100-0">
+        <div class="container">
+            <div class="row">
+
+                <!-- ********** Buttons ********** -->
+                <div class="col-12">
+                   
+                    <!-- Buttons -->
+                    <center>
+    
+         
+                        <form method="post" action="/app1/signup1/">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input class="btn cryptos-btn btn-2 m-2" type="submit" value="SIGNUP">
+                        
+                       </form>
+                       <a href="/app1/index" class="btn cryptos-btn m-2">HOME</a>
+                    </center>
+                </div>
+            
+            <div class="col-12">
+                <div class="elements-title mb-100">
+                    &nbsp;
+                </div>
+            </div>
+            </div>
+        </div>
+   
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<br>
+<footer class="footer-area">
+    <!-- Main Footer Area -->
+    <div class="main-footer-area section-padding-100-0 bg-img bg-overlay" style="background-image: url(img/bg-img/bg-1.jpg);">
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <a href="#"><img src={% static 'app1/img/core-img/logo2.png' %} alt=""></a>
+                        </div>
+                        <p>Morbi vel arcu gravida, iaculis lacus vel, posuere ipsum. Sed faucibus mauris vitae urna consectetur, sit amet maximus nisl sagittis. Ut in iaculis enim, et pulvinar mauris. Etiam tristique magna eget velit consectetur, a tincidunt velit dictum.</p>
+                        <div class="footer-social-info">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Recent Posts</h6>
+                        </div>
+                        <!-- Single Blog Post -->
+                        <div class="single--blog-post">
+                            <a href="#">
+                                <p>Aliquam ac eleifend metus</p>
+                            </a>
+                            <span>March 10, 2018</span>
+                        </div>
+                        <!-- Single Blog Post -->
+                        <div class="single--blog-post">
+                            <a href="#">
+                                <p>Donec in libero sit amet mi vulputate</p>
+                            </a>
+                            <span>March 10, 2018</span>
+                        </div>
+                        <!-- Single Blog Post -->
+                        <div class="single--blog-post">
+                            <a href="#">
+                                <p>Aliquam ac eleifend metus</p>
+                            </a>
+                            <span>March 10, 2018</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="footer-widget mb-100">
+                        <div class="widget-title">
+                            <h6>Quick Links</h6>
+                        </div>
+                        <nav>
+                            <ul class="useful-links d-flex justify-content-between flex-wrap">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Faq</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Newsletter &amp; Exchange</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Exchange</a></li>
+                                <li><a href="/app1/contact/">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Footer Area -->
+    <div class="bottom-footer-area">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-12">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ##### Footer Area Start ##### -->
+
+<!-- ##### All Javascript Script ##### -->
+<!-- jQuery-2.2.4 js -->
+<script src="{% static 'app1/js/jquery/jquery-2.2.4.min.js' %}" type="text/javascript"></script>
+<!-- Popper js -->
+<script src="{% static 'app1/js/bootstrap/popper.min.js' %}" type="text/javascript"></script>
+<!-- Bootstrap js -->
+<script src="{% static 'app1/js/bootstrap/bootstrap.min.js' %}" type="text/javascript"></script>
+<!-- All Plugins js -->
+<script src="{% static 'app1/js/plugins/plugins.js' %}" type="text/javascript"></script>
+<!-- Active js -->
+<script src="{% static 'app1/js/active.js' %}" type="text/javascript"></script>
+</body>
+
+</html>
+
+        
+         
+         
+     
