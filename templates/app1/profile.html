@@ -39,9 +39,8 @@
                             </div>
                             <!-- Top Login & Faq & Earn Monery btn -->
                             <div class="login-faq-earn-money">
-                                <a href="/app1/login">Login</a>
-                                <a href='/app1/signup'>Register</a>
-                                <a href="#">FAQ</a>
+                                
+                                <a href="/app1/logout">Logout</a>
                                 
                             </div>
                         </div>
@@ -130,7 +129,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-12 col-md-6">
                     <div class="breadcumb-text">
-                        <h2>Register</h2>
+                        <h2>Profile</h2>
                     </div>
                 </div>
             </div>
@@ -148,28 +147,58 @@
             </div>
         </div>
     </div>
-
+    
 
     <section class="elements-area mt-50 section-padding-100-0">
         <div class="container">
             <div class="row">
 
                 <!-- ********** Buttons ********** -->
-                <div class="col-12">
+                {% for obj in data %}
+                <h1> Name: {{ obj.firstname }}</h1>
+                <h1> {{ obj.lastname }}</h1>&nbsp;
+
+              
+                <h1>Email: {{ obj.email }}</h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <h1>Mobile No.: {{ obj.mobileno }}</h1>&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+        
+                <h1>Username : {{ obj.username }}</h1> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                <h1>Password : {{ obj.password }}</h1>      
+
+                {% endfor %}
                    
-                    <!-- Buttons -->
-                    <center>
-    
-         
-                        <form method="post" action="/app1/signup1/">
-                        {% csrf_token %}
-                        {{ form.as_p }}
-                        <input class="btn cryptos-btn btn-2 m-2" type="submit" value="SIGNUP">
-                        
-                       </form>
-                       <a href="/app1/" class="btn cryptos-btn m-2">HOME</a>
-                    </center>
-                </div>
             
             <div class="col-12">
                 <div class="elements-title mb-100">
@@ -296,8 +325,3 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </body>
 
 </html>
-
-        
-         
-         
-     

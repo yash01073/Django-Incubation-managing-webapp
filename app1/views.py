@@ -93,3 +93,20 @@ def logout(request):
 
 def contact(request):
     return render(request,'app1/contact.html')
+
+def profile(request):
+    user = request.session['username']
+    args = AddUser.objects.filter(username__exact=user)
+    data = []
+    for var in args:
+        d = {
+            'firstname' : var.firstname,
+            'lastname' : var.lastname,
+            'email' : var.email,
+            'mobileno' : var.mobileno,
+            'username' : var.username,
+            'password' : var.password
+        }
+        data.append(d)
+    return render(request,"app1/profile.html",{'data':data})
+    
